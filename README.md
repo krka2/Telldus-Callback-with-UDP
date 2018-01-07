@@ -15,7 +15,7 @@ It provides a way to represent a telldus device as a Contact sensor i Apple home
 
 
 IN the on and of sections oh the callback script IP adress, UDP Port and Message must match...
-
+```
 def turnOn():
 	print "turning on"
 	UDP_IP = "127.0.0.1"
@@ -34,9 +34,9 @@ def turnOn():
 	sock = socket.socket(socket.AF_INET, # Internet
     socket.SOCK_DGRAM) # UDP
 	sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
-  
+```
   ... The section in config.json 
-  
+```
 {
             "accessory": "UdpContactSensor",
             "name": "UDP Contact Sensors",
@@ -47,7 +47,7 @@ def turnOn():
                 "Switch #4": { "on": "04ff", "off": "0400" }
             }
         },
-
+```
   
   
   
