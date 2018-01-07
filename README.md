@@ -14,6 +14,7 @@ https://www.npmjs.com/package/homebridge-udp-contactsensor
 It provides a way to represent a telldus device as a Contact sensor i Apple home application. 
 This provides a method to generate Noificationsin the Appple device based on Telldus events.
 
+#Configuration
 
 IN the on and of sections oh the callback script IP adress, UDP Port and Message must match...
 ```
@@ -49,11 +50,17 @@ def turnOn():
             }
         },
 ```
+deviceId matches a device ID entry in tellstick.conf  
+```
+	if (method == 1):
+		if(deviceId == 21):
+			#on
+			t = Timer(0.5, turnOn) #start timer with 0.5 second delay (adjust the delay to suit your needs), then turn on
+	else:
+		if(deviceId == 21):		#off
+			t = Timer(00.5, turnOff) #start timer with 0.5 second delay (adjust the delay to suit your needs), then turn off
   
-  
-  
-  
-
+```
 
 
 
