@@ -8,10 +8,11 @@ Logging of Telldus events to a logfile
 
 Sending UDP Packets to a a host for a specific event.
 
-Used togeter with the 
+Used togeter with the Homebridge plugin
 https://www.npmjs.com/package/homebridge-udp-contactsensor
 
 It provides a way to represent a telldus device as a Contact sensor i Apple home application. 
+This provides a method to generate Noificationsin the Appple device based on Telldus events.
 
 
 IN the on and of sections oh the callback script IP adress, UDP Port and Message must match...
