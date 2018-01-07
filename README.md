@@ -8,15 +8,18 @@ Logging of Telldus events to a logfile
 
 Sending UDP Packets to a a host for a specific event.
 
+Telldus events occurs whenever the Telldus Duo sends and message or when the device recives a mesage from any device listed in tellstick.conf file.
+
+
 Used togeter with the Homebridge plugin
 https://www.npmjs.com/package/homebridge-udp-contactsensor
 
-It provides a way to represent a telldus device as a Contact sensor i Apple home application. 
-This provides a method to generate Noificationsin the Appple device based on Telldus events.
+it provides a way to represent a telldus device as a Contact sensor i Apple home application. 
+This provides a method to generate notifications on Appple devices based on Telldus events.
 
 # Configuration
 
-IN the on and of sections oh the callback script IP adress, UDP Port and Message must match...
+In the On and Of sections oh the callback script IP adress, UDP Port and Message must match...
 ```
 def turnOn():
 	print "turning on"
