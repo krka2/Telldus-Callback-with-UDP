@@ -61,6 +61,10 @@ deviceId matches a device ID entry in tellstick.conf
 			t = Timer(00.5, turnOff) #start timer with 0.5 second delay (adjust the delay to suit your needs), then turn off
   
 ```
-
+# Starting
+The callback monitoring service can be started using a command
+```
+sudo  -u pi /usr/bin/python /home/pi/tellduscallback.py /dev/null 2>&1 &
+```
 
 
